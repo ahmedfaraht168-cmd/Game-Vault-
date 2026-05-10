@@ -1,6 +1,6 @@
 # ◈ GAME VAULT — Inventory Manager
 
-A desktop inventory management app for game stores, built with Python and Tkinter.
+
 
 ---
 
