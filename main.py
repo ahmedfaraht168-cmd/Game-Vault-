@@ -238,7 +238,7 @@ class GameInventoryApp(tk.Tk):
         self._build_table(content)
 
         # ── STATUS BAR ──
-        self.status_var = tk.StringVar(value="Ready.")
+         self.status_var = tk.StringVar(value="Ready.")
         statusbar = tk.Frame(self, bg=CARD, height=28)
         statusbar.pack(fill="x", side="bottom")
         statusbar.pack_propagate(False)
