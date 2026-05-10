@@ -237,6 +237,7 @@ class GameInventoryApp(tk.Tk):
         self._build_table(content)
 
         # ── STATUS BAR ──
+
         self.status_var = tk.StringVar(value="Ready.")
         statusbar = tk.Frame(self, bg=CARD, height=28)
         statusbar.pack(fill="x", side="bottom")
@@ -317,7 +318,6 @@ class GameInventoryApp(tk.Tk):
             font=FONT_BODY, borderwidth=0,
         )
         style.configure(
-            "Vault.Treeview.Heading",
             background=PANEL, foreground=ACCENT,
             font=FONT_H, relief="flat", borderwidth=0,
         )
