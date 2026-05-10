@@ -155,7 +155,15 @@ def styled_entry(parent, placeholder="", width=28):
 
     e.bind("<FocusIn>",  _clear_placeholder)
     e.bind("<FocusOut>", _restore_placeholder)
-    _add_placeholder()                  
+    _add_placeholder()
+
+    # Store placeholder text for later validation
+    e._placeholder = placeholder
+
+    def get_real():
+        val = e.get()
+        return "" if val == placeholder else val
+
     e.get_real = get_real
     return frame, e
 
