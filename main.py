@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 
 # ─────────────────────────────────────────────
-#  BACKEND LOGIC
+#  BACKEND
 # ─────────────────────────────────────────────
 PATH = "inventory.txt"
 
